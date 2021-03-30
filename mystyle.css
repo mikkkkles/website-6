@@ -1,10 +1,24 @@
-
 html{
   background-color: #B6D2DD;
-  }/*EMOJI */
+  }
+  #container2{
+    position:absolute;
+    top:20px;
+    left:20px;
+    width: 300px;
+    height: 300px;
+  }
+  #container{
+    position:absolute;
+    top:100px;
+    right:20px;
+    width: 300px;
+    height: 300px;
+  }
+  /*EMOJI */
 #emojihead {
   position: relative;
-  margin-left: 100px;
+  left: 100px;
   top: 150px;
   width: 200px;
   height: 200px;
@@ -14,8 +28,8 @@ html{
 }
 #eye {
   position: absolute;
-  margin-left: 45px;
-  margin-top: 45px;
+  left: 45px;
+  top: 45px;
   width: 40px;
   height: 40px;
   background: black;
@@ -23,8 +37,8 @@ html{
 }
 #eye2 {
   position: absolute;
-  margin-left: 110px;
-  margin-top: 45px;
+  left: 110px;
+  top: 45px;
   width: 40px;
   height: 40px;
   background: black;
@@ -32,8 +46,8 @@ html{
 }
 #shine {
   position: absolute;
-  margin-left: 15px;
-  margin-top: 7px;
+  left: 15px;
+  top: 7px;
   width: 10px;
   height: 10px;
   background: white;
@@ -50,8 +64,8 @@ html{
 }
 #smshine {
   position: absolute;
-  margin-left: 25px;
-  margin-top: 15px;
+  left: 25px;
+  top: 15px;
   width: 7px;
   height: 7px;
   background: white;
@@ -59,8 +73,8 @@ html{
 }
 #smshine2 {
   position: absolute;
-  margin-left: 25px;
-  margin-top: 15px;
+  left: 25px;
+  top: 15px;
   width: 7px;
   height: 7px;
   background: white;
@@ -70,8 +84,8 @@ html{
 /*ICE CREAM CONE */
 #icecream {
   position:relative;
-  margin-left: 950px;
-  margin-top: -100px;
+  left: 20px;
+  top: 20px;
   width: 200px;
   height: 200px;
   background: #F3A0BD;
@@ -79,8 +93,8 @@ html{
 }
 #cone {
   position:absolute;
-  margin-top: 175px;
-  margin-left:25px;
+  top: 175px;
+  left:25px;
   width: 150px;
   height: 250px;
   background: #655037;
@@ -88,8 +102,8 @@ html{
 }
 #ball1 {
   position:absolute;
-  margin-top: -11px;
-  margin-left: -25px;
+  top: -11px;
+  left: -25px;
   width: 45px;
   height: 45px;
   background: #F3A0BD;
@@ -97,8 +111,8 @@ html{
 }
 #ball2 {
   position:absolute;
-  margin-top: -11px;
-  margin-left: 15px;
+  top: -11px;
+  left: 15px;
   width: 45px;
   height: 45px;
   background:#F3A0BD ;
@@ -106,8 +120,8 @@ html{
 }
 #ball3 {
   position:absolute;
-  margin-top: -11px;
-  margin-left: 55px;
+  top: -11px;
+  left: 55px;
   width: 45px;
   height: 45px;
   background:#F3A0BD ;
@@ -115,8 +129,8 @@ html{
 }
 #ball4 {
   position:absolute;
-  margin-top: -11px;
-  margin-left: 95px;
+  top: -11px;
+  left: 95px;
   width: 45px;
   height: 45px;
   background:#F3A0BD ;
@@ -124,8 +138,8 @@ html{
 }
 #ball5 {
   position:absolute;
-  margin-top: -11px;
-  margin-left: 135px;
+  top: -11px;
+  left: 135px;
   width: 45px;
   height: 45px;
   background:#F3A0BD ;
@@ -133,7 +147,7 @@ html{
 }
 #conedetail1 {
   position:absolute;
-  margin-top: 50px;
+  top: 50px;
   width: 150px;
   height: 5px;
   background: #2D2318;
@@ -141,7 +155,7 @@ html{
 }
 #conedetail2 {
   position:absolute;
-  margin-top: 195px;
+  top: 195px;
   width: 150px;
   height: 5px;
   background: #2D2318;
@@ -149,10 +163,68 @@ html{
 }
 #label {
   position:absolute;
-  margin-top: 90px;
-  margin-left: 37px;
+  top: 90px;
+  left: 37px;
   width: 75px;
   height: 75px;
   background: #FAF6E3;
   border-radius: 50%;
+}
+#labeltext{
+  position:absolute;
+  top:120px;
+  left:40px;
+}
+
+#mouth{
+     position: absolute;
+     top: 110px;
+     left: 52px;
+     height:45px;
+     width:90px;
+     border-radius: 0 0 90px 90px;
+     background:black;
+}
+#tongue {
+  position:absolute;
+  top: 120px;
+  left: 55px;
+  width: 20px;
+  height: 15px;
+  background: pink;
+  transition: width 2s;
+  border-radius: 25px;
+}
+#emojihead:hover > #tongue{
+  width: 900px;
+}
+#tonguestationary{
+  position:absolute;
+  top: 10px;
+  left: 10px;
+  width: 85px;
+  height: 15px;
+  background: pink;
+  transition: width 2s;
+  border-radius: 25px;
+}
+h1{
+  position:relative;
+  color: #000080;
+  align-content: center;
+  left: 475px;
+}
+.blink {
+  animation: blink-animation .75s steps(5, start) infinite;
+  -webkit-animation: blink-animation .75s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
